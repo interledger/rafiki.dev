@@ -10,15 +10,15 @@ import styles from './index.module.css';
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    <header>
       <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
+        <h1 className="page__title">{siteConfig.title}</h1>
+        <h2 className="page__subtitle">{siteConfig.tagline}</h2>
+        <div>
           <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            className="page__title button"
+            to="https://github.com/interledger/rafiki">
+            Build it on GitHub!
           </Link>
         </div>
       </div>
@@ -31,7 +31,8 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="Documentation for Interledger's Rafiki"
+      wrapperClassName='main-page'>
       <HomepageHeader />
       <main>
         <HomepageFeatures />
