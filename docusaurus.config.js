@@ -75,11 +75,11 @@ const config = {
       },
       footer: {
         logo: {
-          alt: 'Rafiki Dev Logo',
-          src: 'img/rafiki.png',
-          href: 'https://github.com/interledger/rafiki',
+          alt: "Rafiki Dev Logo",
+          src: "img/rafiki.png",
+          href: "https://github.com/interledger/rafiki",
           width: 50,
-          height: 56
+          height: 56,
         },
         copyright: `Copyright © ${new Date().getFullYear()} Interledger Foundation. Built with Docusaurus.`,
       },
@@ -88,6 +88,18 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+
+  plugins: [
+    [
+      "docusaurus-graphql-plugin",
+      {
+        // can be a path, a glob or an URL
+        schema:
+          "https://raw.githubusercontent.com/interledger/rafiki/main/packages/backend/src/graphql/schema.graphql",
+        routeBasePath: "/docs/reference",
+      },
+    ],
+  ],
 };
 
 module.exports = config;
