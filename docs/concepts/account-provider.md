@@ -17,5 +17,5 @@ The functions of the account provider include:
 - Maintaining the ledger of accounts of account holders
 - Handling deposits and withdrawals into accounts via external payment methods (cards, bank transfers, etc)
 - Authenticating account holders
-- Getting consent from account holders to grant access to their
+- Getting consent from account holders to grant access to their accounts
 - Keeping a record of the public keys used by account holders to access the Open Payments APIs
