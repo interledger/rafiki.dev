@@ -21,13 +21,15 @@ jobs:
         uses: actions/github-script@v5
         with:
           script: |
-            const { data: existingPRs } = await github.rest.pulls.list({
+            const listOfPRs = await github.rest.pulls.list({
               owner: 'interledger',
               repo: 'rafiki.dev',
               base: 'mk/test-trigger'
             });
 
-            if (existingPRs.length === 0) {
+            console.log(listOfPRs)
+
+            if (listOfPRs.data.length === 0) {
               await github.rest.pulls.create({
                 owner: 'interledger',
                 repo: 'rafiki.dev',
