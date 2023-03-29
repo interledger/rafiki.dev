@@ -44,6 +44,45 @@ id<br />
 </tbody>
 </table>
 
+## AddKeyToClientInput
+
+
+
+<p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
+
+<table>
+<thead><tr><th>Name</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td>
+id<br />
+<a href="/docs/reference/scalars#string"><code>String!</code></a>
+</td>
+<td>
+
+</td>
+</tr>
+<tr>
+<td>
+clientId<br />
+<a href="/docs/reference/scalars#string"><code>String!</code></a>
+</td>
+<td>
+
+</td>
+</tr>
+<tr>
+<td>
+jwk<br />
+<a href="/docs/reference/scalars#string"><code>String!</code></a>
+</td>
+<td>
+
+</td>
+</tr>
+</tbody>
+</table>
+
 ## AddPeerLiquidityInput
 
 
@@ -107,16 +146,16 @@ assetCode<br />
 <a href="/docs/reference/scalars#string"><code>String!</code></a>
 </td>
 <td>
-<p><a href="https://en.wikipedia.org/wiki/ISO_4217">ISO 4217 currency code</a>, e.g. <code>USD</code></p>
+
 </td>
 </tr>
 <tr>
 <td>
 assetScale<br />
-<a href="/docs/reference/scalars#uint8"><code>UInt8!</code></a>
+<a href="/docs/reference/scalars#int"><code>Int!</code></a>
 </td>
 <td>
-<p>Difference in orders of magnitude between the standard unit of an asset and a corresponding fractional unit</p>
+
 </td>
 </tr>
 </tbody>
@@ -137,16 +176,37 @@ code<br />
 <a href="/docs/reference/scalars#string"><code>String!</code></a>
 </td>
 <td>
-<p><a href="https://en.wikipedia.org/wiki/ISO_4217">ISO 4217 currency code</a>, e.g. <code>USD</code></p>
+
 </td>
 </tr>
 <tr>
 <td>
 scale<br />
-<a href="/docs/reference/scalars#uint8"><code>UInt8!</code></a>
+<a href="/docs/reference/scalars#int"><code>Int!</code></a>
 </td>
 <td>
-<p>Difference in orders of magnitude between the standard unit of an asset and a corresponding fractional unit</p>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+## CreateApiKeyInput
+
+
+
+<p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
+
+<table>
+<thead><tr><th>Name</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td>
+paymentPointerId<br />
+<a href="/docs/reference/scalars#string"><code>String!</code></a>
+</td>
+<td>
+<p>Payment pointer API key is created for.</p>
 </td>
 </tr>
 </tbody>
@@ -167,16 +227,16 @@ code<br />
 <a href="/docs/reference/scalars#string"><code>String!</code></a>
 </td>
 <td>
-<p><a href="https://en.wikipedia.org/wiki/ISO_4217">ISO 4217 currency code</a>, e.g. <code>USD</code></p>
+
 </td>
 </tr>
 <tr>
 <td>
 scale<br />
-<a href="/docs/reference/scalars#uint8"><code>UInt8!</code></a>
+<a href="/docs/reference/scalars#int"><code>Int!</code></a>
 </td>
 <td>
-<p>Difference in orders of magnitude between the standard unit of an asset and a corresponding fractional unit</p>
+
 </td>
 </tr>
 <tr>
@@ -185,7 +245,7 @@ withdrawalThreshold<br />
 <a href="/docs/reference/scalars#uint64"><code>UInt64</code></a>
 </td>
 <td>
-<p>Minimum amount of liquidity that can be withdrawn from the asset</p>
+
 </td>
 </tr>
 </tbody>
@@ -230,6 +290,54 @@ id<br />
 </tbody>
 </table>
 
+## CreateClientInput
+
+
+
+<p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
+
+<table>
+<thead><tr><th>Name</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td>
+name<br />
+<a href="/docs/reference/scalars#string"><code>String!</code></a>
+</td>
+<td>
+
+</td>
+</tr>
+<tr>
+<td>
+uri<br />
+<a href="/docs/reference/scalars#string"><code>String!</code></a>
+</td>
+<td>
+
+</td>
+</tr>
+<tr>
+<td>
+image<br />
+<a href="/docs/reference/scalars#string"><code>String!</code></a>
+</td>
+<td>
+
+</td>
+</tr>
+<tr>
+<td>
+email<br />
+<a href="/docs/reference/scalars#string"><code>String!</code></a>
+</td>
+<td>
+
+</td>
+</tr>
+</tbody>
+</table>
+
 ## CreateIncomingPaymentInput
 
 
@@ -245,7 +353,7 @@ paymentPointerId<br />
 <a href="/docs/reference/scalars#string"><code>String!</code></a>
 </td>
 <td>
-<p>Id of the payment pointer under which the incoming payment will be created</p>
+
 </td>
 </tr>
 <tr>
@@ -254,7 +362,7 @@ expiresAt<br />
 <a href="/docs/reference/scalars#string"><code>String</code></a>
 </td>
 <td>
-<p>Expiration date-time</p>
+
 </td>
 </tr>
 <tr>
@@ -263,7 +371,7 @@ description<br />
 <a href="/docs/reference/scalars#string"><code>String</code></a>
 </td>
 <td>
-<p>Human readable description of the incoming payment.</p>
+
 </td>
 </tr>
 <tr>
@@ -272,7 +380,7 @@ incomingAmount<br />
 <a href="/docs/reference/inputObjects#amountinput"><code>AmountInput</code></a>
 </td>
 <td>
-<p>Maximum amount to be received</p>
+
 </td>
 </tr>
 <tr>
@@ -281,7 +389,7 @@ externalRef<br />
 <a href="/docs/reference/scalars#string"><code>String</code></a>
 </td>
 <td>
-<p>A reference that can be used by external systems to reconcile this payment with their systems. E.g. an invoice number.</p>
+
 </td>
 </tr>
 </tbody>
@@ -302,7 +410,7 @@ paymentPointerId<br />
 <a href="/docs/reference/scalars#string"><code>String!</code></a>
 </td>
 <td>
-<p>Id of the payment pointer under which the outgoing payment will be created</p>
+
 </td>
 </tr>
 <tr>
@@ -311,7 +419,7 @@ quoteId<br />
 <a href="/docs/reference/scalars#string"><code>String!</code></a>
 </td>
 <td>
-<p>Id of the corresponding quote for that outgoing payment</p>
+
 </td>
 </tr>
 <tr>
@@ -320,7 +428,7 @@ description<br />
 <a href="/docs/reference/scalars#string"><code>String</code></a>
 </td>
 <td>
-<p>Human readable description of the outgoing payment.</p>
+
 </td>
 </tr>
 <tr>
@@ -329,7 +437,7 @@ externalRef<br />
 <a href="/docs/reference/scalars#string"><code>String</code></a>
 </td>
 <td>
-<p>A reference that can be used by external systems to reconcile this payment with their systems. E.g. an invoice number.</p>
+
 </td>
 </tr>
 </tbody>
@@ -346,11 +454,11 @@ externalRef<br />
 <tbody>
 <tr>
 <td>
-assetId<br />
-<a href="/docs/reference/scalars#string"><code>String!</code></a>
+asset<br />
+<a href="/docs/reference/inputObjects#assetinput"><code>AssetInput!</code></a>
 </td>
 <td>
-<p>Asset of the payment pointer</p>
+
 </td>
 </tr>
 <tr>
@@ -359,7 +467,7 @@ url<br />
 <a href="/docs/reference/scalars#string"><code>String!</code></a>
 </td>
 <td>
-<p>Payment Pointer URL</p>
+
 </td>
 </tr>
 <tr>
@@ -368,37 +476,7 @@ publicName<br />
 <a href="/docs/reference/scalars#string"><code>String</code></a>
 </td>
 <td>
-<p>Public name associated with the payment pointer</p>
-</td>
-</tr>
-</tbody>
-</table>
 
-## CreatePaymentPointerKeyInput
-
-
-
-<p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
-
-<table>
-<thead><tr><th>Name</th><th>Description</th></tr></thead>
-<tbody>
-<tr>
-<td>
-paymentPointerId<br />
-<a href="/docs/reference/scalars#string"><code>String!</code></a>
-</td>
-<td>
-
-</td>
-</tr>
-<tr>
-<td>
-jwk<br />
-<a href="/docs/reference/inputObjects#jwkinput"><code>JwkInput!</code></a>
-</td>
-<td>
-<p>Public key</p>
 </td>
 </tr>
 </tbody>
@@ -449,7 +527,7 @@ maxPacketAmount<br />
 <a href="/docs/reference/scalars#uint64"><code>UInt64</code></a>
 </td>
 <td>
-<p>Maximum packet amount that the peer accepts</p>
+
 </td>
 </tr>
 <tr>
@@ -458,16 +536,16 @@ http<br />
 <a href="/docs/reference/inputObjects#httpinput"><code>HttpInput!</code></a>
 </td>
 <td>
-<p>Peering connection details</p>
+
 </td>
 </tr>
 <tr>
 <td>
-assetId<br />
-<a href="/docs/reference/scalars#string"><code>String!</code></a>
+asset<br />
+<a href="/docs/reference/inputObjects#assetinput"><code>AssetInput!</code></a>
 </td>
 <td>
-<p>Asset id of peering relationship</p>
+
 </td>
 </tr>
 <tr>
@@ -476,16 +554,7 @@ staticIlpAddress<br />
 <a href="/docs/reference/scalars#string"><code>String!</code></a>
 </td>
 <td>
-<p>Peer&#39;s ILP address</p>
-</td>
-</tr>
-<tr>
-<td>
-name<br />
-<a href="/docs/reference/scalars#string"><code>String</code></a>
-</td>
-<td>
-<p>Peer&#39;s internal name</p>
+
 </td>
 </tr>
 </tbody>
@@ -545,7 +614,7 @@ paymentPointerId<br />
 <a href="/docs/reference/scalars#string"><code>String!</code></a>
 </td>
 <td>
-<p>Id of the payment pointer under which the quote will be created</p>
+
 </td>
 </tr>
 <tr>
@@ -554,7 +623,7 @@ sendAmount<br />
 <a href="/docs/reference/inputObjects#amountinput"><code>AmountInput</code></a>
 </td>
 <td>
-<p>Amount to send (fixed send)</p>
+
 </td>
 </tr>
 <tr>
@@ -563,7 +632,7 @@ receiveAmount<br />
 <a href="/docs/reference/inputObjects#amountinput"><code>AmountInput</code></a>
 </td>
 <td>
-<p>Amount to receive (fixed receive)</p>
+
 </td>
 </tr>
 <tr>
@@ -572,13 +641,13 @@ receiver<br />
 <a href="/docs/reference/scalars#string"><code>String!</code></a>
 </td>
 <td>
-<p>Payment pointer URL of the receiver</p>
+
 </td>
 </tr>
 </tbody>
 </table>
 
-## CreateReceiverInput
+## DeleteAllApiKeysInput
 
 
 
@@ -589,47 +658,11 @@ receiver<br />
 <tbody>
 <tr>
 <td>
-paymentPointerUrl<br />
+paymentPointerId<br />
 <a href="/docs/reference/scalars#string"><code>String!</code></a>
 </td>
 <td>
-<p>Receiving payment pointer URL</p>
-</td>
-</tr>
-<tr>
-<td>
-expiresAt<br />
-<a href="/docs/reference/scalars#string"><code>String</code></a>
-</td>
-<td>
-<p>Expiration date-time</p>
-</td>
-</tr>
-<tr>
-<td>
-description<br />
-<a href="/docs/reference/scalars#string"><code>String</code></a>
-</td>
-<td>
-<p>Human readable description of the incoming payment.</p>
-</td>
-</tr>
-<tr>
-<td>
-incomingAmount<br />
-<a href="/docs/reference/inputObjects#amountinput"><code>AmountInput</code></a>
-</td>
-<td>
-<p>Maximum amount to be received</p>
-</td>
-</tr>
-<tr>
-<td>
-externalRef<br />
-<a href="/docs/reference/scalars#string"><code>String</code></a>
-</td>
-<td>
-<p>A reference that can be used by external systems to reconcile this payment with their systems. E.g. an invoice number.</p>
+<p>Payment pointer API keys are deleted from.</p>
 </td>
 </tr>
 </tbody>
@@ -650,7 +683,7 @@ authTokens<br />
 <a href="/docs/reference/scalars#string"><code>[String!]!</code></a>
 </td>
 <td>
-<p>Array of auth tokens accepted by this Rafiki instance</p>
+
 </td>
 </tr>
 </tbody>
@@ -671,7 +704,7 @@ incoming<br />
 <a href="/docs/reference/inputObjects#httpincominginput"><code>HttpIncomingInput</code></a>
 </td>
 <td>
-<p>Incoming connection details</p>
+
 </td>
 </tr>
 <tr>
@@ -680,7 +713,7 @@ outgoing<br />
 <a href="/docs/reference/inputObjects#httpoutgoinginput"><code>HttpOutgoingInput!</code></a>
 </td>
 <td>
-<p>Outgoing connection details</p>
+
 </td>
 </tr>
 </tbody>
@@ -701,7 +734,7 @@ authToken<br />
 <a href="/docs/reference/scalars#string"><code>String!</code></a>
 </td>
 <td>
-<p>Auth token to present at the peering Rafiki instance</p>
+
 </td>
 </tr>
 <tr>
@@ -710,13 +743,13 @@ endpoint<br />
 <a href="/docs/reference/scalars#string"><code>String!</code></a>
 </td>
 <td>
-<p>Peer&#39;s connection endpoint</p>
+
 </td>
 </tr>
 </tbody>
 </table>
 
-## JwkInput
+## RedeemApiKeyInput
 
 
 
@@ -727,47 +760,62 @@ endpoint<br />
 <tbody>
 <tr>
 <td>
-kid<br />
+key<br />
 <a href="/docs/reference/scalars#string"><code>String!</code></a>
 </td>
 <td>
-<p>Key id</p>
+<p>API key</p>
 </td>
 </tr>
 <tr>
 <td>
-x<br />
+paymentPointerId<br />
 <a href="/docs/reference/scalars#string"><code>String!</code></a>
 </td>
 <td>
-<p>Base64 url-encoded public key.</p>
+<p>Payment pointer API key was issued for.</p>
 </td>
 </tr>
+</tbody>
+</table>
+
+## RefreshSessionInput
+
+
+
+<p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
+
+<table>
+<thead><tr><th>Name</th><th>Description</th></tr></thead>
+<tbody>
 <tr>
 <td>
-alg<br />
-<a href="/docs/reference/enums#alg"><code>Alg!</code></a>
+key<br />
+<a href="/docs/reference/scalars#string"><code>String!</code></a>
 </td>
 <td>
-<p>Cryptographic algorithm family used with the key. The only allowed value is <code>EdDSA</code>.</p>
+<p>Session key</p>
 </td>
 </tr>
+</tbody>
+</table>
+
+## RevokeSessionInput
+
+
+
+<p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
+
+<table>
+<thead><tr><th>Name</th><th>Description</th></tr></thead>
+<tbody>
 <tr>
 <td>
-kty<br />
-<a href="/docs/reference/enums#kty"><code>Kty!</code></a>
+key<br />
+<a href="/docs/reference/scalars#string"><code>String!</code></a>
 </td>
 <td>
-<p>Key type. The only allowed value is <code>OKP</code>.</p>
-</td>
-</tr>
-<tr>
-<td>
-crv<br />
-<a href="/docs/reference/enums#crv"><code>Crv!</code></a>
-</td>
-<td>
-<p>Curve that the key pair is derived from. The only allowed value is <code>Ed25519</code>.</p>
+<p>Session key</p>
 </td>
 </tr>
 </tbody>
@@ -788,7 +836,7 @@ id<br />
 <a href="/docs/reference/scalars#string"><code>String!</code></a>
 </td>
 <td>
-<p>Asset id</p>
+
 </td>
 </tr>
 <tr>
@@ -797,7 +845,7 @@ withdrawalThreshold<br />
 <a href="/docs/reference/scalars#uint64"><code>UInt64</code></a>
 </td>
 <td>
-<p>New minimum amount of liquidity that can be withdrawn from the asset</p>
+
 </td>
 </tr>
 </tbody>
@@ -818,7 +866,7 @@ id<br />
 <a href="/docs/reference/scalars#string"><code>String!</code></a>
 </td>
 <td>
-<p>Peer id</p>
+
 </td>
 </tr>
 <tr>
@@ -827,7 +875,7 @@ maxPacketAmount<br />
 <a href="/docs/reference/scalars#uint64"><code>UInt64</code></a>
 </td>
 <td>
-<p>New maximum packet amount that the peer accepts</p>
+
 </td>
 </tr>
 <tr>
@@ -836,7 +884,7 @@ http<br />
 <a href="/docs/reference/inputObjects#httpinput"><code>HttpInput</code></a>
 </td>
 <td>
-<p>New peering connection details</p>
+
 </td>
 </tr>
 <tr>
@@ -845,16 +893,7 @@ staticIlpAddress<br />
 <a href="/docs/reference/scalars#string"><code>String</code></a>
 </td>
 <td>
-<p>Peer&#39;s new ILP address</p>
-</td>
-</tr>
-<tr>
-<td>
-name<br />
-<a href="/docs/reference/scalars#string"><code>String</code></a>
-</td>
-<td>
-<p>Peer&#39;s new public name</p>
+
 </td>
 </tr>
 </tbody>

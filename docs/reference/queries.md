@@ -9,7 +9,7 @@ sidebar_position: 1
 
 **Type:** [Asset](/docs/reference/objects#asset)
 
-Fetch an asset
+
 
 <p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
 
@@ -78,11 +78,34 @@ last<br />
 </tbody>
 </table>
 
+## client
+
+**Type:** [Client](/docs/reference/objects#client)
+
+
+
+<p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
+
+<table>
+<thead><tr><th>Name</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td>
+id<br />
+<a href="/docs/reference/scalars#string"><code>String!</code></a>
+</td>
+<td>
+
+</td>
+</tr>
+</tbody>
+</table>
+
 ## outgoingPayment
 
 **Type:** [OutgoingPayment](/docs/reference/objects#outgoingpayment)
 
-Fetch an Open Payments outgoing payment
+
 
 <p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
 
@@ -105,7 +128,7 @@ id<br />
 
 **Type:** [PaymentPointer](/docs/reference/objects#paymentpointer)
 
-Fetch a payment pointer
+
 
 <p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
 
@@ -128,7 +151,7 @@ id<br />
 
 **Type:** [Peer](/docs/reference/objects#peer)
 
-Fetch a peer
+
 
 <p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
 
@@ -201,7 +224,7 @@ last<br />
 
 **Type:** [Quote](/docs/reference/objects#quote)
 
-Fetch an Open Payments quote
+
 
 <p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
 

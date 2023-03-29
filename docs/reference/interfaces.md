@@ -16,7 +16,9 @@ sidebar_position: 5
 - [PaymentPointer](/docs/reference/objects#paymentpointer)
 - [IncomingPayment](/docs/reference/objects#incomingpayment)
 - [OutgoingPayment](/docs/reference/objects#outgoingpayment)
-- [PaymentPointerKey](/docs/reference/objects#paymentpointerkey)
+- [Client](/docs/reference/objects#client)
+- [ClientKeys](/docs/reference/objects#clientkeys)
+- [ApiKey](/docs/reference/objects#apikey)
 
 <p style={{ marginBottom: "0.4em" }}><strong>Fields</strong></p>
 
@@ -59,8 +61,14 @@ createdAt<br />
 - [TransferMutationResponse](/docs/reference/objects#transfermutationresponse)
 - [LiquidityMutationResponse](/docs/reference/objects#liquiditymutationresponse)
 - [PaymentPointerWithdrawalMutationResponse](/docs/reference/objects#paymentpointerwithdrawalmutationresponse)
-- [CreatePaymentPointerKeyMutationResponse](/docs/reference/objects#createpaymentpointerkeymutationresponse)
-- [RevokePaymentPointerKeyMutationResponse](/docs/reference/objects#revokepaymentpointerkeymutationresponse)
+- [CreateClientMutationResponse](/docs/reference/objects#createclientmutationresponse)
+- [AddKeyToClientMutationResponse](/docs/reference/objects#addkeytoclientmutationresponse)
+- [RevokeClientKeyMutationResponse](/docs/reference/objects#revokeclientkeymutationresponse)
+- [CreateApiKeyMutationResponse](/docs/reference/objects#createapikeymutationresponse)
+- [DeleteAllApiKeysMutationResponse](/docs/reference/objects#deleteallapikeysmutationresponse)
+- [RedeemApiKeyMutationResponse](/docs/reference/objects#redeemapikeymutationresponse)
+- [RefreshSessionMutationResponse](/docs/reference/objects#refreshsessionmutationresponse)
+- [RevokeSessionMutationResponse](/docs/reference/objects#revokesessionmutationresponse)
 
 <p style={{ marginBottom: "0.4em" }}><strong>Fields</strong></p>
 
