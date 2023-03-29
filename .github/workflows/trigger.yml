@@ -1,7 +1,9 @@
 name: "Trigger PR"
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - mk/test-trigger
 
 jobs:
   open-pr:
