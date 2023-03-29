@@ -9,11 +9,6 @@ jobs:
   open-pr:
     runs-on: ubuntu-latest
     steps:
-      -   
-      checkout:
-    runs-on: ubuntu-latest
-    timeout-minutes: 3
-    steps:
       - uses: actions/checkout@v3
       - uses: ./.github/workflows/env-setup
       - run: pnpm docs:graphql:generate
