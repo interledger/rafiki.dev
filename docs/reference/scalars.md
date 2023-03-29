@@ -29,3 +29,7 @@ The `String` scalar type represents textual data, represented as UTF-8 character
 
 
 
+## UInt8
+
+
+
