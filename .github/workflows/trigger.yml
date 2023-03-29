@@ -24,10 +24,11 @@ jobs:
             const listOfPRs = await github.rest.pulls.list({
               owner: 'interledger',
               repo: 'rafiki.dev',
-              base: 'mk/test-trigger'
+              head: 'mk/test-trigger'
             });
 
-            console.log(listOfPRs.data.length)
+            console.log(listOfPRs.data)
+            console.log(listOfPRs.data.length === 0)
 
             if (listOfPRs.data.length === 0) {
               await github.rest.pulls.create({
