@@ -27,7 +27,7 @@ jobs:
               base: 'mk/test-trigger'
             });
 
-            console.log(listOfPRs)
+            console.log(listOfPRs.data.length)
 
             if (listOfPRs.data.length === 0) {
               await github.rest.pulls.create({
