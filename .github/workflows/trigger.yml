@@ -16,6 +16,8 @@ jobs:
         with:
           commit_message: "[Bot] Update Docs from updated GraphQL schema"
           push_options: "--force"
+          branch: test-doc-update
+          create_branch: true
 
       - name: Trigger Rafiki Dev Update
         uses: actions/github-script@v5
@@ -24,7 +26,7 @@ jobs:
             const listOfPRs = await github.rest.pulls.list({
               owner: 'interledger',
               repo: 'rafiki.dev',
-              head: 'interledger:mk/test-trigger',
+              head: 'interledger:mk/test-doc-update',
               state: 'open'
             });
 
@@ -34,7 +36,7 @@ jobs:
                 repo: 'rafiki.dev',
                 body: 'Testing',
                 title: 'Publish New Docs',
-                head: 'mk/test-trigger',
+                head: 'mk/test-doc-update',
                 base: 'main'
               });
             }
