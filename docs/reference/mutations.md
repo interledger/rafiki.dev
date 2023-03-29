@@ -28,29 +28,6 @@ input<br />
 </tbody>
 </table>
 
-## addKeyToClient
-
-**Type:** [AddKeyToClientMutationResponse](/docs/reference/objects#addkeytoclientmutationresponse)
-
-Add Key to Client
-
-<p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
-
-<table>
-<thead><tr><th>Name</th><th>Description</th></tr></thead>
-<tbody>
-<tr>
-<td>
-input<br />
-<a href="/docs/reference/inputObjects#addkeytoclientinput"><code>AddKeyToClientInput!</code></a>
-</td>
-<td>
-
-</td>
-</tr>
-</tbody>
-</table>
-
 ## addPeerLiquidity
 
 **Type:** [LiquidityMutationResponse](/docs/reference/objects#liquiditymutationresponse)
@@ -74,34 +51,11 @@ input<br />
 </tbody>
 </table>
 
-## createApiKey
-
-**Type:** [CreateApiKeyMutationResponse](/docs/reference/objects#createapikeymutationresponse)
-
-Create API Key
-
-<p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
-
-<table>
-<thead><tr><th>Name</th><th>Description</th></tr></thead>
-<tbody>
-<tr>
-<td>
-input<br />
-<a href="/docs/reference/inputObjects#createapikeyinput"><code>CreateApiKeyInput!</code></a>
-</td>
-<td>
-
-</td>
-</tr>
-</tbody>
-</table>
-
 ## createAsset
 
 **Type:** [AssetMutationResponse!](/docs/reference/objects#assetmutationresponse)
 
-Create asset
+Create an asset
 
 <p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
 
@@ -124,7 +78,7 @@ input<br />
 
 **Type:** [LiquidityMutationResponse](/docs/reference/objects#liquiditymutationresponse)
 
-Create liquidity withdrawal from asset
+Withdraw asset liquidity
 
 <p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
 
@@ -143,34 +97,11 @@ input<br />
 </tbody>
 </table>
 
-## createClient
-
-**Type:** [CreateClientMutationResponse](/docs/reference/objects#createclientmutationresponse)
-
-Create Client
-
-<p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
-
-<table>
-<thead><tr><th>Name</th><th>Description</th></tr></thead>
-<tbody>
-<tr>
-<td>
-input<br />
-<a href="/docs/reference/inputObjects#createclientinput"><code>CreateClientInput!</code></a>
-</td>
-<td>
-
-</td>
-</tr>
-</tbody>
-</table>
-
 ## createIncomingPayment
 
 **Type:** [IncomingPaymentResponse!](/docs/reference/objects#incomingpaymentresponse)
 
-
+Create an internal Open Payments Incoming Payment. The receiver has a payment pointer on this Rafiki instance.
 
 <p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
 
@@ -193,7 +124,7 @@ input<br />
 
 **Type:** [OutgoingPaymentResponse!](/docs/reference/objects#outgoingpaymentresponse)
 
-
+Create an Open Payments Outgoing Payment
 
 <p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
 
@@ -216,7 +147,7 @@ input<br />
 
 **Type:** [CreatePaymentPointerMutationResponse!](/docs/reference/objects#createpaymentpointermutationresponse)
 
-
+Create a payment pointer
 
 <p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
 
@@ -235,11 +166,34 @@ input<br />
 </tbody>
 </table>
 
+## createPaymentPointerKey
+
+**Type:** [CreatePaymentPointerKeyMutationResponse](/docs/reference/objects#createpaymentpointerkeymutationresponse)
+
+Add a public key to a payment pointer that is used to verify Open Payments requests.
+
+<p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
+
+<table>
+<thead><tr><th>Name</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td>
+input<br />
+<a href="/docs/reference/inputObjects#createpaymentpointerkeyinput"><code>CreatePaymentPointerKeyInput!</code></a>
+</td>
+<td>
+
+</td>
+</tr>
+</tbody>
+</table>
+
 ## createPaymentPointerWithdrawal
 
 **Type:** [PaymentPointerWithdrawalMutationResponse](/docs/reference/objects#paymentpointerwithdrawalmutationresponse)
 
-Create liquidity withdrawal from Open Payments payment pointer
+Withdraw liquidity from a payment pointer received via Web Monetization.
 
 <p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
 
@@ -262,7 +216,7 @@ input<br />
 
 **Type:** [CreatePeerMutationResponse!](/docs/reference/objects#createpeermutationresponse)
 
-Create peer
+Create a peer
 
 <p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
 
@@ -285,7 +239,7 @@ input<br />
 
 **Type:** [LiquidityMutationResponse](/docs/reference/objects#liquiditymutationresponse)
 
-Create liquidity withdrawal from peer
+Withdraw peer liquidity
 
 <p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
 
@@ -308,7 +262,7 @@ input<br />
 
 **Type:** [QuoteResponse!](/docs/reference/objects#quoteresponse)
 
-
+Create an Open Payments Quote
 
 <p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
 
@@ -327,11 +281,11 @@ input<br />
 </tbody>
 </table>
 
-## deleteAllApiKeys
+## createReceiver
 
-**Type:** [DeleteAllApiKeysMutationResponse](/docs/reference/objects#deleteallapikeysmutationresponse)
+**Type:** [CreateReceiverResponse!](/docs/reference/objects#createreceiverresponse)
 
-Delete all API Keys
+Create an internal or external Open Payments Incoming Payment. The receiver has a payment pointer on either this or another Open Payments resource server.
 
 <p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
 
@@ -341,7 +295,7 @@ Delete all API Keys
 <tr>
 <td>
 input<br />
-<a href="/docs/reference/inputObjects#deleteallapikeysinput"><code>DeleteAllApiKeysInput!</code></a>
+<a href="/docs/reference/inputObjects#createreceiverinput"><code>CreateReceiverInput!</code></a>
 </td>
 <td>
 
@@ -354,7 +308,7 @@ input<br />
 
 **Type:** [DeletePeerMutationResponse!](/docs/reference/objects#deletepeermutationresponse)
 
-Delete peer
+Delete a peer
 
 <p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
 
@@ -396,11 +350,11 @@ eventId<br />
 </tbody>
 </table>
 
-## finalizeLiquidityWithdrawal
+## postLiquidityWithdrawal
 
 **Type:** [LiquidityMutationResponse](/docs/reference/objects#liquiditymutationresponse)
 
-Finalize liquidity withdrawal
+Post liquidity withdrawal. Withdrawals are two-phase commits and are committed via this mutation.
 
 <p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
 
@@ -413,17 +367,17 @@ withdrawalId<br />
 <a href="/docs/reference/scalars#string"><code>String!</code></a>
 </td>
 <td>
-<p>The id of the liquidity withdrawal to finalize.</p>
+<p>The id of the liquidity withdrawal to post.</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-## redeemApiKey
+## revokePaymentPointerKey
 
-**Type:** [RedeemApiKeyMutationResponse](/docs/reference/objects#redeemapikeymutationresponse)
+**Type:** [RevokePaymentPointerKeyMutationResponse](/docs/reference/objects#revokepaymentpointerkeymutationresponse)
 
-Redeem API Key
+Revoke a public key associated with a payment pointer. Open Payment requests using this key for request signatures will be denied going forward.
 
 <p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
 
@@ -432,103 +386,11 @@ Redeem API Key
 <tbody>
 <tr>
 <td>
-input<br />
-<a href="/docs/reference/inputObjects#redeemapikeyinput"><code>RedeemApiKeyInput!</code></a>
-</td>
-<td>
-
-</td>
-</tr>
-</tbody>
-</table>
-
-## refreshSession
-
-**Type:** [RefreshSessionMutationResponse](/docs/reference/objects#refreshsessionmutationresponse)
-
-Refresh Session
-
-<p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
-
-<table>
-<thead><tr><th>Name</th><th>Description</th></tr></thead>
-<tbody>
-<tr>
-<td>
-input<br />
-<a href="/docs/reference/inputObjects#refreshsessioninput"><code>RefreshSessionInput!</code></a>
-</td>
-<td>
-
-</td>
-</tr>
-</tbody>
-</table>
-
-## revokeClientKey
-
-**Type:** [RevokeClientKeyMutationResponse](/docs/reference/objects#revokeclientkeymutationresponse)
-
-
-
-<p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
-
-<table>
-<thead><tr><th>Name</th><th>Description</th></tr></thead>
-<tbody>
-<tr>
-<td>
-keyId<br />
+id<br />
 <a href="/docs/reference/scalars#string"><code>String!</code></a>
 </td>
 <td>
-
-</td>
-</tr>
-</tbody>
-</table>
-
-## revokeSession
-
-**Type:** [RevokeSessionMutationResponse](/docs/reference/objects#revokesessionmutationresponse)
-
-Revoke Session
-
-<p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
-
-<table>
-<thead><tr><th>Name</th><th>Description</th></tr></thead>
-<tbody>
-<tr>
-<td>
-input<br />
-<a href="/docs/reference/inputObjects#revokesessioninput"><code>RevokeSessionInput!</code></a>
-</td>
-<td>
-
-</td>
-</tr>
-</tbody>
-</table>
-
-## rollbackLiquidityWithdrawal
-
-**Type:** [LiquidityMutationResponse](/docs/reference/objects#liquiditymutationresponse)
-
-Rollback liquidity withdrawal
-
-<p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
-
-<table>
-<thead><tr><th>Name</th><th>Description</th></tr></thead>
-<tbody>
-<tr>
-<td>
-withdrawalId<br />
-<a href="/docs/reference/scalars#string"><code>String!</code></a>
-</td>
-<td>
-<p>The id of the liquidity withdrawal to rollback.</p>
+<p>Internal id of key</p>
 </td>
 </tr>
 </tbody>
@@ -538,7 +400,7 @@ withdrawalId<br />
 
 **Type:** [TriggerPaymentPointerEventsMutationResponse!](/docs/reference/objects#triggerpaymentpointereventsmutationresponse)
 
-
+If automatic withdrawal of funds received via Web Monetization by the payment pointer are disabled, this mutation can be used to trigger up to n withdrawal events.
 
 <p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
 
@@ -551,7 +413,7 @@ limit<br />
 <a href="/docs/reference/scalars#int"><code>Int!</code></a>
 </td>
 <td>
-
+<p>Maximum number of events being triggered (n).</p>
 </td>
 </tr>
 </tbody>
@@ -561,7 +423,7 @@ limit<br />
 
 **Type:** [AssetMutationResponse!](/docs/reference/objects#assetmutationresponse)
 
-Update asset withdrawal threshold
+Update an asset's withdrawal threshold. The withdrawal threshold indicates the MINIMUM amount that can be withdrawn.
 
 <p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
 
@@ -584,7 +446,7 @@ input<br />
 
 **Type:** [UpdatePeerMutationResponse!](/docs/reference/objects#updatepeermutationresponse)
 
-Update peer
+Update a peer
 
 <p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
 
@@ -598,6 +460,29 @@ input<br />
 </td>
 <td>
 
+</td>
+</tr>
+</tbody>
+</table>
+
+## voidLiquidityWithdrawal
+
+**Type:** [LiquidityMutationResponse](/docs/reference/objects#liquiditymutationresponse)
+
+Void liquidity withdrawal. Withdrawals are two-phase commits and are rolled back via this mutation.
+
+<p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
+
+<table>
+<thead><tr><th>Name</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td>
+withdrawalId<br />
+<a href="/docs/reference/scalars#string"><code>String!</code></a>
+</td>
+<td>
+<p>The id of the liquidity withdrawal to void.</p>
 </td>
 </tr>
 </tbody>
