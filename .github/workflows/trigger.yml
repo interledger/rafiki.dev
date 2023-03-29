@@ -9,15 +9,35 @@ jobs:
   open-pr:
     runs-on: ubuntu-latest
     steps:
+      -   
+      checkout:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ./.github/workflows/env-setup
+      - run: pnpm docs:graphql:generate
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "[Bot] Update Docs from updated GraphQL schema"
+
       - name: Trigger Rafiki Dev Update
         uses: actions/github-script@v5
         with:
           script: |
-            await github.rest.pulls.create({
+            const existingPR = await github.rest.pulls.list({
               owner: 'interledger',
               repo: 'rafiki.dev',
-              body: 'Testing',
-              title: 'Publish New Docs',
-              head: 'mk/test-trigger',
-              base: 'main'
+              head: 'mk/test-trigger'
             });
+
+            if (!existingPR) {
+              await github.rest.pulls.create({
+                owner: 'interledger',
+                repo: 'rafiki.dev',
+                body: 'Testing',
+                title: 'Publish New Docs',
+                head: 'mk/test-trigger',
+                base: 'main'
+              });
+            }
