@@ -28,9 +28,6 @@ jobs:
               state: 'open'
             });
 
-            console.log(listOfPRs.data)
-            console.log(listOfPRs.data.length === 0)
-
             if (listOfPRs.data.length === 0) {
               await github.rest.pulls.create({
                 owner: 'interledger',
