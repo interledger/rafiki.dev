@@ -1,0 +1,39 @@
+name: "Generate docs from updated GraphQL schema"
+
+on:
+  workflow_dispatch:
+
+jobs:
+  generate-docs-from-schema:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ./.github/workflows/env-setup
+      - run: pnpm docs:graphql:generate
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "[Bot] Generate docs from updated GraphQL schema"
+          push_options: "--force"
+          branch: bot/generate-docs-from-updated-schema
+
+      - name: Open PR with updated changes
+        uses: actions/github-script@v5
+        with:
+          script: |
+            const listOfPRs = await github.rest.pulls.list({
+              owner: 'interledger',
+              repo: 'rafiki.dev',
+              head: 'interledger:bot/generate-docs-from-updated-schema',
+              state: 'open'
+            });
+
+            if (listOfPRs.data.length === 0) {
+              await github.rest.pulls.create({
+                owner: 'interledger',
+                repo: 'rafiki.dev',
+                body: 'Testing',
+                title: 'Generate docs from updated schema',
+                head: 'bot/generate-docs-from-updated-schema',
+                base: 'main'
+              });
+            }
