@@ -5,6 +5,42 @@ slug: enums
 sidebar_position: 6
 ---
 
+## Alg
+
+
+
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
+
+<table>
+<thead><tr><th>Value</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td>EdDSA</td>
+<td>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+## Crv
+
+
+
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
+
+<table>
+<thead><tr><th>Value</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td>Ed25519</td>
+<td>
+
+</td>
+</tr>
+</tbody>
+</table>
+
 ## IncomingPaymentState
 
 
@@ -41,6 +77,24 @@ sidebar_position: 6
 </tbody>
 </table>
 
+## Kty
+
+
+
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
+
+<table>
+<thead><tr><th>Value</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td>OKP</td>
+<td>
+
+</td>
+</tr>
+</tbody>
+</table>
+
 ## LiquidityError
 
 
@@ -51,13 +105,13 @@ sidebar_position: 6
 <thead><tr><th>Value</th><th>Description</th></tr></thead>
 <tbody>
 <tr>
-<td>AlreadyCommitted</td>
+<td>AlreadyPosted</td>
 <td>
 
 </td>
 </tr>
 <tr>
-<td>AlreadyRolledBack</td>
+<td>AlreadyVoided</td>
 <td>
 
 </td>
