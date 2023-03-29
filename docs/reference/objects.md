@@ -5,58 +5,6 @@ slug: objects
 sidebar_position: 4
 ---
 
-## AddKeyToClientMutationResponse
-
-
-
-<p style={{ marginBottom: "0.4em" }}><strong>Implements</strong></p>
-
-- [MutationResponse](/docs/reference/interfaces#mutationresponse)
-
-<p style={{ marginBottom: "0.4em" }}><strong>Fields</strong></p>
-
-<table>
-<thead><tr><th>Name</th><th>Description</th></tr></thead>
-<tbody>
-<tr>
-<td>
-code<br />
-<a href="/docs/reference/scalars#string"><code>String!</code></a>
-</td>
-<td>
-
-</td>
-</tr>
-<tr>
-<td>
-success<br />
-<a href="/docs/reference/scalars#boolean"><code>Boolean!</code></a>
-</td>
-<td>
-
-</td>
-</tr>
-<tr>
-<td>
-message<br />
-<a href="/docs/reference/scalars#string"><code>String!</code></a>
-</td>
-<td>
-
-</td>
-</tr>
-<tr>
-<td>
-client<br />
-<a href="/docs/reference/objects#client"><code>Client</code></a>
-</td>
-<td>
-
-</td>
-</tr>
-</tbody>
-</table>
-
 ## Amount
 
 
@@ -81,77 +29,16 @@ assetCode<br />
 <a href="/docs/reference/scalars#string"><code>String!</code></a>
 </td>
 <td>
-
+<p><a href="https://en.wikipedia.org/wiki/ISO_4217">ISO 4217 currency code</a>, e.g. <code>USD</code></p>
 </td>
 </tr>
 <tr>
 <td>
 assetScale<br />
-<a href="/docs/reference/scalars#int"><code>Int!</code></a>
+<a href="/docs/reference/scalars#uint8"><code>UInt8!</code></a>
 </td>
 <td>
-
-</td>
-</tr>
-</tbody>
-</table>
-
-## ApiKey
-
-
-
-<p style={{ marginBottom: "0.4em" }}><strong>Implements</strong></p>
-
-- [Model](/docs/reference/interfaces#model)
-
-<p style={{ marginBottom: "0.4em" }}><strong>Fields</strong></p>
-
-<table>
-<thead><tr><th>Name</th><th>Description</th></tr></thead>
-<tbody>
-<tr>
-<td>
-id<br />
-<a href="/docs/reference/scalars#id"><code>ID!</code></a>
-</td>
-<td>
-
-</td>
-</tr>
-<tr>
-<td>
-paymentPointerId<br />
-<a href="/docs/reference/scalars#string"><code>String!</code></a>
-</td>
-<td>
-
-</td>
-</tr>
-<tr>
-<td>
-key<br />
-<a href="/docs/reference/scalars#string"><code>String!</code></a>
-</td>
-<td>
-
-</td>
-</tr>
-<tr>
-<td>
-createdAt<br />
-<a href="/docs/reference/scalars#string"><code>String!</code></a>
-</td>
-<td>
-
-</td>
-</tr>
-<tr>
-<td>
-updatedAt<br />
-<a href="/docs/reference/scalars#string"><code>String!</code></a>
-</td>
-<td>
-
+<p>Difference in orders of magnitude between the standard unit of an asset and a corresponding fractional unit</p>
 </td>
 </tr>
 </tbody>
@@ -176,7 +63,7 @@ id<br />
 <a href="/docs/reference/scalars#id"><code>ID!</code></a>
 </td>
 <td>
-
+<p>Asset id</p>
 </td>
 </tr>
 <tr>
@@ -185,16 +72,16 @@ code<br />
 <a href="/docs/reference/scalars#string"><code>String!</code></a>
 </td>
 <td>
-
+<p><a href="https://en.wikipedia.org/wiki/ISO_4217">ISO 4217 currency code</a>, e.g. <code>USD</code></p>
 </td>
 </tr>
 <tr>
 <td>
 scale<br />
-<a href="/docs/reference/scalars#int"><code>Int!</code></a>
+<a href="/docs/reference/scalars#uint8"><code>UInt8!</code></a>
 </td>
 <td>
-
+<p>Difference in orders of magnitude between the standard unit of an asset and a corresponding fractional unit</p>
 </td>
 </tr>
 <tr>
@@ -203,7 +90,7 @@ withdrawalThreshold<br />
 <a href="/docs/reference/scalars#uint64"><code>UInt64</code></a>
 </td>
 <td>
-
+<p>Minimum amount of liquidity that can be withdrawn from the asset</p>
 </td>
 </tr>
 <tr>
@@ -212,7 +99,7 @@ createdAt<br />
 <a href="/docs/reference/scalars#string"><code>String!</code></a>
 </td>
 <td>
-
+<p>Date-time of creation</p>
 </td>
 </tr>
 </tbody>
@@ -330,138 +217,7 @@ edges<br />
 </tbody>
 </table>
 
-## Client
-
-
-
-<p style={{ marginBottom: "0.4em" }}><strong>Implements</strong></p>
-
-- [Model](/docs/reference/interfaces#model)
-
-<p style={{ marginBottom: "0.4em" }}><strong>Fields</strong></p>
-
-<table>
-<thead><tr><th>Name</th><th>Description</th></tr></thead>
-<tbody>
-<tr>
-<td>
-id<br />
-<a href="/docs/reference/scalars#id"><code>ID!</code></a>
-</td>
-<td>
-
-</td>
-</tr>
-<tr>
-<td>
-name<br />
-<a href="/docs/reference/scalars#string"><code>String!</code></a>
-</td>
-<td>
-
-</td>
-</tr>
-<tr>
-<td>
-uri<br />
-<a href="/docs/reference/scalars#string"><code>String!</code></a>
-</td>
-<td>
-
-</td>
-</tr>
-<tr>
-<td>
-image<br />
-<a href="/docs/reference/scalars#string"><code>String!</code></a>
-</td>
-<td>
-
-</td>
-</tr>
-<tr>
-<td>
-email<br />
-<a href="/docs/reference/scalars#string"><code>String!</code></a>
-</td>
-<td>
-
-</td>
-</tr>
-<tr>
-<td>
-keys<br />
-<a href="/docs/reference/objects#clientkeys"><code>[ClientKeys!]!</code></a>
-</td>
-<td>
-
-</td>
-</tr>
-<tr>
-<td>
-createdAt<br />
-<a href="/docs/reference/scalars#string"><code>String!</code></a>
-</td>
-<td>
-
-</td>
-</tr>
-</tbody>
-</table>
-
-## ClientKeys
-
-
-
-<p style={{ marginBottom: "0.4em" }}><strong>Implements</strong></p>
-
-- [Model](/docs/reference/interfaces#model)
-
-<p style={{ marginBottom: "0.4em" }}><strong>Fields</strong></p>
-
-<table>
-<thead><tr><th>Name</th><th>Description</th></tr></thead>
-<tbody>
-<tr>
-<td>
-id<br />
-<a href="/docs/reference/scalars#id"><code>ID!</code></a>
-</td>
-<td>
-
-</td>
-</tr>
-<tr>
-<td>
-clientId<br />
-<a href="/docs/reference/scalars#string"><code>String!</code></a>
-</td>
-<td>
-
-</td>
-</tr>
-<tr>
-<td>
-jwk<br />
-<a href="/docs/reference/scalars#string"><code>String!</code></a>
-</td>
-<td>
-
-</td>
-</tr>
-<tr>
-<td>
-createdAt<br />
-<a href="/docs/reference/scalars#string"><code>String!</code></a>
-</td>
-<td>
-
-</td>
-</tr>
-</tbody>
-</table>
-
-## CreateApiKeyMutationResponse
+## CreatePaymentPointerKeyMutationResponse
 
 
 
@@ -503,60 +259,8 @@ message<br />
 </tr>
 <tr>
 <td>
-apiKey<br />
-<a href="/docs/reference/objects#apikey"><code>ApiKey</code></a>
-</td>
-<td>
-
-</td>
-</tr>
-</tbody>
-</table>
-
-## CreateClientMutationResponse
-
-
-
-<p style={{ marginBottom: "0.4em" }}><strong>Implements</strong></p>
-
-- [MutationResponse](/docs/reference/interfaces#mutationresponse)
-
-<p style={{ marginBottom: "0.4em" }}><strong>Fields</strong></p>
-
-<table>
-<thead><tr><th>Name</th><th>Description</th></tr></thead>
-<tbody>
-<tr>
-<td>
-code<br />
-<a href="/docs/reference/scalars#string"><code>String!</code></a>
-</td>
-<td>
-
-</td>
-</tr>
-<tr>
-<td>
-success<br />
-<a href="/docs/reference/scalars#boolean"><code>Boolean!</code></a>
-</td>
-<td>
-
-</td>
-</tr>
-<tr>
-<td>
-message<br />
-<a href="/docs/reference/scalars#string"><code>String!</code></a>
-</td>
-<td>
-
-</td>
-</tr>
-<tr>
-<td>
-client<br />
-<a href="/docs/reference/objects#client"><code>Client</code></a>
+paymentPointerKey<br />
+<a href="/docs/reference/objects#paymentpointerkey"><code>PaymentPointerKey</code></a>
 </td>
 <td>
 
@@ -669,13 +373,9 @@ peer<br />
 </tbody>
 </table>
 
-## DeleteAllApiKeysMutationResponse
+## CreateReceiverResponse
 
 
-
-<p style={{ marginBottom: "0.4em" }}><strong>Implements</strong></p>
-
-- [MutationResponse](/docs/reference/interfaces#mutationresponse)
 
 <p style={{ marginBottom: "0.4em" }}><strong>Fields</strong></p>
 
@@ -703,7 +403,16 @@ success<br />
 <tr>
 <td>
 message<br />
-<a href="/docs/reference/scalars#string"><code>String!</code></a>
+<a href="/docs/reference/scalars#string"><code>String</code></a>
+</td>
+<td>
+
+</td>
+</tr>
+<tr>
+<td>
+receiver<br />
+<a href="/docs/reference/objects#receiver"><code>Receiver</code></a>
 </td>
 <td>
 
@@ -770,7 +479,7 @@ outgoing<br />
 <a href="/docs/reference/objects#httpoutgoing"><code>HttpOutgoing!</code></a>
 </td>
 <td>
-
+<p>Outgoing connection details</p>
 </td>
 </tr>
 </tbody>
@@ -791,7 +500,7 @@ authToken<br />
 <a href="/docs/reference/scalars#string"><code>String!</code></a>
 </td>
 <td>
-
+<p>Auth token to present at the peering Rafiki instance</p>
 </td>
 </tr>
 <tr>
@@ -800,7 +509,7 @@ endpoint<br />
 <a href="/docs/reference/scalars#string"><code>String!</code></a>
 </td>
 <td>
-
+<p>Peer&#39;s connection endpoint</p>
 </td>
 </tr>
 </tbody>
@@ -825,7 +534,7 @@ id<br />
 <a href="/docs/reference/scalars#id"><code>ID!</code></a>
 </td>
 <td>
-
+<p>Incoming Payment id</p>
 </td>
 </tr>
 <tr>
@@ -834,7 +543,7 @@ paymentPointerId<br />
 <a href="/docs/reference/scalars#id"><code>ID!</code></a>
 </td>
 <td>
-
+<p>Id of the payment pointer under which this incoming payment was created</p>
 </td>
 </tr>
 <tr>
@@ -843,7 +552,7 @@ state<br />
 <a href="/docs/reference/enums#incomingpaymentstate"><code>IncomingPaymentState!</code></a>
 </td>
 <td>
-
+<p>Incoming payment state</p>
 </td>
 </tr>
 <tr>
@@ -852,7 +561,7 @@ expiresAt<br />
 <a href="/docs/reference/scalars#string"><code>String!</code></a>
 </td>
 <td>
-
+<p>Date-time of expiry. After this time, the incoming payment will not accept further payments made to it.</p>
 </td>
 </tr>
 <tr>
@@ -861,7 +570,7 @@ incomingAmount<br />
 <a href="/docs/reference/objects#amount"><code>Amount</code></a>
 </td>
 <td>
-
+<p>The maximum amount that should be paid into the payment pointer under this incoming payment.</p>
 </td>
 </tr>
 <tr>
@@ -870,7 +579,7 @@ receivedAmount<br />
 <a href="/docs/reference/objects#amount"><code>Amount!</code></a>
 </td>
 <td>
-
+<p>The total amount that has been paid into the payment pointer under this incoming payment.</p>
 </td>
 </tr>
 <tr>
@@ -879,7 +588,7 @@ description<br />
 <a href="/docs/reference/scalars#string"><code>String</code></a>
 </td>
 <td>
-
+<p>Human readable description of the incoming payment.</p>
 </td>
 </tr>
 <tr>
@@ -888,7 +597,7 @@ externalRef<br />
 <a href="/docs/reference/scalars#string"><code>String</code></a>
 </td>
 <td>
-
+<p>A reference that can be used by external systems to reconcile this payment with their systems. E.g. an invoice number.</p>
 </td>
 </tr>
 <tr>
@@ -897,7 +606,7 @@ createdAt<br />
 <a href="/docs/reference/scalars#string"><code>String!</code></a>
 </td>
 <td>
-
+<p>Date-time of creation</p>
 </td>
 </tr>
 </tbody>
@@ -1011,6 +720,63 @@ payment<br />
 </tbody>
 </table>
 
+## Jwk
+
+
+
+<p style={{ marginBottom: "0.4em" }}><strong>Fields</strong></p>
+
+<table>
+<thead><tr><th>Name</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td>
+kid<br />
+<a href="/docs/reference/scalars#string"><code>String!</code></a>
+</td>
+<td>
+<p>Key id</p>
+</td>
+</tr>
+<tr>
+<td>
+x<br />
+<a href="/docs/reference/scalars#string"><code>String!</code></a>
+</td>
+<td>
+<p>Base64 url-encoded public key.</p>
+</td>
+</tr>
+<tr>
+<td>
+alg<br />
+<a href="/docs/reference/enums#alg"><code>Alg!</code></a>
+</td>
+<td>
+<p>Cryptographic algorithm family used with the key. The only allowed value is <code>EdDSA</code>.</p>
+</td>
+</tr>
+<tr>
+<td>
+kty<br />
+<a href="/docs/reference/enums#kty"><code>Kty!</code></a>
+</td>
+<td>
+<p>Key type. The only allowed value is <code>OKP</code>.</p>
+</td>
+</tr>
+<tr>
+<td>
+crv<br />
+<a href="/docs/reference/enums#crv"><code>Crv!</code></a>
+</td>
+<td>
+<p>Curve that the key pair is derived from. The only allowed value is <code>Ed25519</code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 ## LiquidityMutationResponse
 
 
@@ -1082,7 +848,7 @@ id<br />
 <a href="/docs/reference/scalars#id"><code>ID!</code></a>
 </td>
 <td>
-
+<p>Outgoing payment id</p>
 </td>
 </tr>
 <tr>
@@ -1091,7 +857,7 @@ paymentPointerId<br />
 <a href="/docs/reference/scalars#id"><code>ID!</code></a>
 </td>
 <td>
-
+<p>Id of the payment pointer under which this outgoing payment was created</p>
 </td>
 </tr>
 <tr>
@@ -1100,7 +866,7 @@ state<br />
 <a href="/docs/reference/enums#outgoingpaymentstate"><code>OutgoingPaymentState!</code></a>
 </td>
 <td>
-
+<p>Outgoing payment state</p>
 </td>
 </tr>
 <tr>
@@ -1127,7 +893,7 @@ sendAmount<br />
 <a href="/docs/reference/objects#amount"><code>Amount!</code></a>
 </td>
 <td>
-
+<p>Amount to send (fixed send)</p>
 </td>
 </tr>
 <tr>
@@ -1136,7 +902,7 @@ receiveAmount<br />
 <a href="/docs/reference/objects#amount"><code>Amount!</code></a>
 </td>
 <td>
-
+<p>Amount to receive (fixed receive)</p>
 </td>
 </tr>
 <tr>
@@ -1145,7 +911,7 @@ receiver<br />
 <a href="/docs/reference/scalars#string"><code>String!</code></a>
 </td>
 <td>
-
+<p>Payment pointer URL of the receiver</p>
 </td>
 </tr>
 <tr>
@@ -1154,7 +920,7 @@ description<br />
 <a href="/docs/reference/scalars#string"><code>String</code></a>
 </td>
 <td>
-
+<p>Human readable description of the outgoing payment.</p>
 </td>
 </tr>
 <tr>
@@ -1163,7 +929,7 @@ externalRef<br />
 <a href="/docs/reference/scalars#string"><code>String</code></a>
 </td>
 <td>
-
+<p>A reference that can be used by external systems to reconcile this payment with their systems. E.g. an invoice number.</p>
 </td>
 </tr>
 <tr>
@@ -1172,7 +938,7 @@ quote<br />
 <a href="/docs/reference/objects#quote"><code>Quote</code></a>
 </td>
 <td>
-
+<p>Quote for this outgoing payment</p>
 </td>
 </tr>
 <tr>
@@ -1181,7 +947,7 @@ sentAmount<br />
 <a href="/docs/reference/objects#amount"><code>Amount!</code></a>
 </td>
 <td>
-
+<p>Amount already sent</p>
 </td>
 </tr>
 <tr>
@@ -1190,7 +956,7 @@ createdAt<br />
 <a href="/docs/reference/scalars#string"><code>String!</code></a>
 </td>
 <td>
-
+<p>Date-time of creation</p>
 </td>
 </tr>
 </tbody>
@@ -1371,7 +1137,7 @@ id<br />
 <a href="/docs/reference/scalars#id"><code>ID!</code></a>
 </td>
 <td>
-
+<p>Payment pointer id</p>
 </td>
 </tr>
 <tr>
@@ -1380,7 +1146,7 @@ asset<br />
 <a href="/docs/reference/objects#asset"><code>Asset!</code></a>
 </td>
 <td>
-
+<p>Asset of the payment pointer</p>
 </td>
 </tr>
 <tr>
@@ -1389,7 +1155,7 @@ url<br />
 <a href="/docs/reference/scalars#string"><code>String!</code></a>
 </td>
 <td>
-
+<p>Payment Pointer URL</p>
 </td>
 </tr>
 <tr>
@@ -1398,7 +1164,7 @@ publicName<br />
 <a href="/docs/reference/scalars#string"><code>String</code></a>
 </td>
 <td>
-
+<p>Public name associated with the payment pointer</p>
 </td>
 </tr>
 <tr>
@@ -1407,7 +1173,7 @@ incomingPayments<br />
 <a href="/docs/reference/objects#incomingpaymentconnection"><code>IncomingPaymentConnection</code></a>
 </td>
 <td>
-
+<p>List of incoming payments received by this payment pointer</p>
 
 <p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
 
@@ -1461,7 +1227,7 @@ quotes<br />
 <a href="/docs/reference/objects#quoteconnection"><code>QuoteConnection</code></a>
 </td>
 <td>
-
+<p>List of quotes created at this payment pointer</p>
 
 <p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
 
@@ -1515,7 +1281,7 @@ outgoingPayments<br />
 <a href="/docs/reference/objects#outgoingpaymentconnection"><code>OutgoingPaymentConnection</code></a>
 </td>
 <td>
-
+<p>List of outgoing payments sent from this payment pointer</p>
 
 <p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
 
@@ -1569,7 +1335,68 @@ createdAt<br />
 <a href="/docs/reference/scalars#string"><code>String!</code></a>
 </td>
 <td>
+<p>Date-time of creation</p>
+</td>
+</tr>
+</tbody>
+</table>
 
+## PaymentPointerKey
+
+
+
+<p style={{ marginBottom: "0.4em" }}><strong>Implements</strong></p>
+
+- [Model](/docs/reference/interfaces#model)
+
+<p style={{ marginBottom: "0.4em" }}><strong>Fields</strong></p>
+
+<table>
+<thead><tr><th>Name</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td>
+id<br />
+<a href="/docs/reference/scalars#id"><code>ID!</code></a>
+</td>
+<td>
+<p>Internal id of key</p>
+</td>
+</tr>
+<tr>
+<td>
+paymentPointerId<br />
+<a href="/docs/reference/scalars#id"><code>ID!</code></a>
+</td>
+<td>
+<p>Id of the payment pointer to which this key belongs to</p>
+</td>
+</tr>
+<tr>
+<td>
+jwk<br />
+<a href="/docs/reference/objects#jwk"><code>Jwk!</code></a>
+</td>
+<td>
+<p>Public key</p>
+</td>
+</tr>
+<tr>
+<td>
+revoked<br />
+<a href="/docs/reference/scalars#boolean"><code>Boolean!</code></a>
+</td>
+<td>
+<p>Indicator whether the key has been revoked</p>
+</td>
+</tr>
+<tr>
+<td>
+createdAt<br />
+<a href="/docs/reference/scalars#string"><code>String!</code></a>
+</td>
+<td>
+<p>Date-time of creation</p>
 </td>
 </tr>
 </tbody>
@@ -1590,7 +1417,7 @@ id<br />
 <a href="/docs/reference/scalars#id"><code>ID!</code></a>
 </td>
 <td>
-
+<p>Withdrawal Id</p>
 </td>
 </tr>
 <tr>
@@ -1599,7 +1426,7 @@ amount<br />
 <a href="/docs/reference/scalars#uint64"><code>UInt64!</code></a>
 </td>
 <td>
-
+<p>Amount to withdraw</p>
 </td>
 </tr>
 <tr>
@@ -1608,7 +1435,7 @@ paymentPointer<br />
 <a href="/docs/reference/objects#paymentpointer"><code>PaymentPointer!</code></a>
 </td>
 <td>
-
+<p>Payment pointer details</p>
 </td>
 </tr>
 </tbody>
@@ -1694,7 +1521,7 @@ id<br />
 <a href="/docs/reference/scalars#id"><code>ID!</code></a>
 </td>
 <td>
-
+<p>Peer id</p>
 </td>
 </tr>
 <tr>
@@ -1703,7 +1530,7 @@ maxPacketAmount<br />
 <a href="/docs/reference/scalars#uint64"><code>UInt64</code></a>
 </td>
 <td>
-
+<p>Maximum packet amount that the peer accepts</p>
 </td>
 </tr>
 <tr>
@@ -1712,7 +1539,7 @@ http<br />
 <a href="/docs/reference/objects#http"><code>Http!</code></a>
 </td>
 <td>
-
+<p>Peering connection details</p>
 </td>
 </tr>
 <tr>
@@ -1721,7 +1548,7 @@ asset<br />
 <a href="/docs/reference/objects#asset"><code>Asset!</code></a>
 </td>
 <td>
-
+<p>Asset of peering relationship</p>
 </td>
 </tr>
 <tr>
@@ -1730,7 +1557,16 @@ staticIlpAddress<br />
 <a href="/docs/reference/scalars#string"><code>String!</code></a>
 </td>
 <td>
-
+<p>Peer&#39;s ILP address</p>
+</td>
+</tr>
+<tr>
+<td>
+name<br />
+<a href="/docs/reference/scalars#string"><code>String</code></a>
+</td>
+<td>
+<p>Peer&#39;s public name</p>
 </td>
 </tr>
 <tr>
@@ -1739,7 +1575,7 @@ createdAt<br />
 <a href="/docs/reference/scalars#string"><code>String!</code></a>
 </td>
 <td>
-
+<p>Date-time of creation</p>
 </td>
 </tr>
 </tbody>
@@ -1820,7 +1656,7 @@ id<br />
 <a href="/docs/reference/scalars#id"><code>ID!</code></a>
 </td>
 <td>
-
+<p>Quote id</p>
 </td>
 </tr>
 <tr>
@@ -1829,7 +1665,7 @@ paymentPointerId<br />
 <a href="/docs/reference/scalars#id"><code>ID!</code></a>
 </td>
 <td>
-
+<p>Id of the payment pointer under which this quote was created</p>
 </td>
 </tr>
 <tr>
@@ -1838,7 +1674,7 @@ receiver<br />
 <a href="/docs/reference/scalars#string"><code>String!</code></a>
 </td>
 <td>
-
+<p>Payment pointer URL of the receiver</p>
 </td>
 </tr>
 <tr>
@@ -1847,7 +1683,7 @@ sendAmount<br />
 <a href="/docs/reference/objects#amount"><code>Amount!</code></a>
 </td>
 <td>
-
+<p>Amount to send (fixed send)</p>
 </td>
 </tr>
 <tr>
@@ -1856,7 +1692,7 @@ receiveAmount<br />
 <a href="/docs/reference/objects#amount"><code>Amount!</code></a>
 </td>
 <td>
-
+<p>Amount to receive (fixed receive)</p>
 </td>
 </tr>
 <tr>
@@ -1865,7 +1701,7 @@ maxPacketAmount<br />
 <a href="/docs/reference/scalars#uint64"><code>UInt64!</code></a>
 </td>
 <td>
-
+<p>Maximum value per packet allowed on the possible routes</p>
 </td>
 </tr>
 <tr>
@@ -1874,7 +1710,7 @@ minExchangeRate<br />
 <a href="/docs/reference/scalars#float"><code>Float!</code></a>
 </td>
 <td>
-
+<p>Aggregate exchange rate the payment is guaranteed to meet</p>
 </td>
 </tr>
 <tr>
@@ -1883,7 +1719,7 @@ lowEstimatedExchangeRate<br />
 <a href="/docs/reference/scalars#float"><code>Float!</code></a>
 </td>
 <td>
-
+<p>Lower bound of probed exchange rate</p>
 </td>
 </tr>
 <tr>
@@ -1892,7 +1728,7 @@ highEstimatedExchangeRate<br />
 <a href="/docs/reference/scalars#float"><code>Float!</code></a>
 </td>
 <td>
-
+<p>Upper bound of probed exchange rate</p>
 </td>
 </tr>
 <tr>
@@ -1901,7 +1737,7 @@ createdAt<br />
 <a href="/docs/reference/scalars#string"><code>String!</code></a>
 </td>
 <td>
-
+<p>Date-time of creation</p>
 </td>
 </tr>
 <tr>
@@ -1910,7 +1746,7 @@ expiresAt<br />
 <a href="/docs/reference/scalars#string"><code>String!</code></a>
 </td>
 <td>
-
+<p>Date-time of expiration</p>
 </td>
 </tr>
 </tbody>
@@ -2024,13 +1860,9 @@ quote<br />
 </tbody>
 </table>
 
-## RedeemApiKeyMutationResponse
+## Receiver
 
 
-
-<p style={{ marginBottom: "0.4em" }}><strong>Implements</strong></p>
-
-- [MutationResponse](/docs/reference/interfaces#mutationresponse)
 
 <p style={{ marginBottom: "0.4em" }}><strong>Fields</strong></p>
 
@@ -2039,212 +1871,141 @@ quote<br />
 <tbody>
 <tr>
 <td>
-code<br />
+id<br />
 <a href="/docs/reference/scalars#string"><code>String!</code></a>
 </td>
 <td>
-
+<p>Incoming payment URL</p>
 </td>
 </tr>
 <tr>
 <td>
-success<br />
+paymentPointerUrl<br />
+<a href="/docs/reference/scalars#string"><code>String!</code></a>
+</td>
+<td>
+<p>Payment pointer URL under which the incoming payment was created</p>
+</td>
+</tr>
+<tr>
+<td>
+completed<br />
 <a href="/docs/reference/scalars#boolean"><code>Boolean!</code></a>
 </td>
 <td>
-
+<p>Describes whether the incoming payment has completed receiving funds.</p>
 </td>
 </tr>
 <tr>
 <td>
-message<br />
-<a href="/docs/reference/scalars#string"><code>String!</code></a>
+incomingAmount<br />
+<a href="/docs/reference/objects#amount"><code>Amount</code></a>
 </td>
 <td>
-
-</td>
-</tr>
-<tr>
-<td>
-session<br />
-<a href="/docs/reference/objects#session"><code>Session</code></a>
-</td>
-<td>
-
-</td>
-</tr>
-</tbody>
-</table>
-
-## RefreshSessionMutationResponse
-
-
-
-<p style={{ marginBottom: "0.4em" }}><strong>Implements</strong></p>
-
-- [MutationResponse](/docs/reference/interfaces#mutationresponse)
-
-<p style={{ marginBottom: "0.4em" }}><strong>Fields</strong></p>
-
-<table>
-<thead><tr><th>Name</th><th>Description</th></tr></thead>
-<tbody>
-<tr>
-<td>
-code<br />
-<a href="/docs/reference/scalars#string"><code>String!</code></a>
-</td>
-<td>
-
+<p>The maximum amount that should be paid into the payment pointer under this incoming payment.</p>
 </td>
 </tr>
 <tr>
 <td>
-success<br />
-<a href="/docs/reference/scalars#boolean"><code>Boolean!</code></a>
+receivedAmount<br />
+<a href="/docs/reference/objects#amount"><code>Amount!</code></a>
 </td>
 <td>
-
-</td>
-</tr>
-<tr>
-<td>
-message<br />
-<a href="/docs/reference/scalars#string"><code>String!</code></a>
-</td>
-<td>
-
-</td>
-</tr>
-<tr>
-<td>
-session<br />
-<a href="/docs/reference/objects#session"><code>Session</code></a>
-</td>
-<td>
-
-</td>
-</tr>
-</tbody>
-</table>
-
-## RevokeClientKeyMutationResponse
-
-
-
-<p style={{ marginBottom: "0.4em" }}><strong>Implements</strong></p>
-
-- [MutationResponse](/docs/reference/interfaces#mutationresponse)
-
-<p style={{ marginBottom: "0.4em" }}><strong>Fields</strong></p>
-
-<table>
-<thead><tr><th>Name</th><th>Description</th></tr></thead>
-<tbody>
-<tr>
-<td>
-code<br />
-<a href="/docs/reference/scalars#string"><code>String!</code></a>
-</td>
-<td>
-
-</td>
-</tr>
-<tr>
-<td>
-success<br />
-<a href="/docs/reference/scalars#boolean"><code>Boolean!</code></a>
-</td>
-<td>
-
-</td>
-</tr>
-<tr>
-<td>
-message<br />
-<a href="/docs/reference/scalars#string"><code>String!</code></a>
-</td>
-<td>
-
-</td>
-</tr>
-<tr>
-<td>
-keyId<br />
-<a href="/docs/reference/scalars#string"><code>String!</code></a>
-</td>
-<td>
-
-</td>
-</tr>
-</tbody>
-</table>
-
-## RevokeSessionMutationResponse
-
-
-
-<p style={{ marginBottom: "0.4em" }}><strong>Implements</strong></p>
-
-- [MutationResponse](/docs/reference/interfaces#mutationresponse)
-
-<p style={{ marginBottom: "0.4em" }}><strong>Fields</strong></p>
-
-<table>
-<thead><tr><th>Name</th><th>Description</th></tr></thead>
-<tbody>
-<tr>
-<td>
-code<br />
-<a href="/docs/reference/scalars#string"><code>String!</code></a>
-</td>
-<td>
-
-</td>
-</tr>
-<tr>
-<td>
-success<br />
-<a href="/docs/reference/scalars#boolean"><code>Boolean!</code></a>
-</td>
-<td>
-
-</td>
-</tr>
-<tr>
-<td>
-message<br />
-<a href="/docs/reference/scalars#string"><code>String!</code></a>
-</td>
-<td>
-
-</td>
-</tr>
-</tbody>
-</table>
-
-## Session
-
-
-
-<p style={{ marginBottom: "0.4em" }}><strong>Fields</strong></p>
-
-<table>
-<thead><tr><th>Name</th><th>Description</th></tr></thead>
-<tbody>
-<tr>
-<td>
-key<br />
-<a href="/docs/reference/scalars#string"><code>String!</code></a>
-</td>
-<td>
-
+<p>The total amount that has been paid into the payment pointer under this incoming payment.</p>
 </td>
 </tr>
 <tr>
 <td>
 expiresAt<br />
+<a href="/docs/reference/scalars#string"><code>String</code></a>
+</td>
+<td>
+<p>Date-time of expiry. After this time, the incoming payment will accept further payments made to it.</p>
+</td>
+</tr>
+<tr>
+<td>
+description<br />
+<a href="/docs/reference/scalars#string"><code>String</code></a>
+</td>
+<td>
+<p>Human readable description of the incoming payment.</p>
+</td>
+</tr>
+<tr>
+<td>
+externalRef<br />
+<a href="/docs/reference/scalars#string"><code>String</code></a>
+</td>
+<td>
+<p>A reference that can be used by external systems to reconcile this payment with their systems. E.g. an invoice number.</p>
+</td>
+</tr>
+<tr>
+<td>
+createdAt<br />
 <a href="/docs/reference/scalars#string"><code>String!</code></a>
+</td>
+<td>
+<p>Date-time of creation</p>
+</td>
+</tr>
+<tr>
+<td>
+updatedAt<br />
+<a href="/docs/reference/scalars#string"><code>String!</code></a>
+</td>
+<td>
+<p>Date-time of last update</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+## RevokePaymentPointerKeyMutationResponse
+
+
+
+<p style={{ marginBottom: "0.4em" }}><strong>Implements</strong></p>
+
+- [MutationResponse](/docs/reference/interfaces#mutationresponse)
+
+<p style={{ marginBottom: "0.4em" }}><strong>Fields</strong></p>
+
+<table>
+<thead><tr><th>Name</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td>
+code<br />
+<a href="/docs/reference/scalars#string"><code>String!</code></a>
+</td>
+<td>
+
+</td>
+</tr>
+<tr>
+<td>
+success<br />
+<a href="/docs/reference/scalars#boolean"><code>Boolean!</code></a>
+</td>
+<td>
+
+</td>
+</tr>
+<tr>
+<td>
+message<br />
+<a href="/docs/reference/scalars#string"><code>String!</code></a>
+</td>
+<td>
+
+</td>
+</tr>
+<tr>
+<td>
+paymentPointerKey<br />
+<a href="/docs/reference/objects#paymentpointerkey"><code>PaymentPointerKey</code></a>
 </td>
 <td>
 
@@ -2342,7 +2103,7 @@ count<br />
 <a href="/docs/reference/scalars#int"><code>Int</code></a>
 </td>
 <td>
-
+<p>Number of events triggered</p>
 </td>
 </tr>
 </tbody>
