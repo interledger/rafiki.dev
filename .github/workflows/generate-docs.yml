@@ -32,7 +32,7 @@ jobs:
               await github.rest.pulls.create({
                 owner: 'interledger',
                 repo: 'rafiki.dev',
-                body: `GraphQL schema updates have landed in [rafiki](https://github.com/interledger/rafiki), and docs have been generated from the updated schema. <br><br> *This PR was automatically opened by the `workflows/generate-docs.yaml` GitHub action.*`,
+                body: 'GraphQL schema updates have landed in [rafiki](https://github.com/interledger/rafiki), and docs have been generated from the updated schema. <br><br> *This PR was automatically opened by the `workflows/generate-docs.yaml` GitHub action.*',
                 title: 'Generate docs from updated schema',
                 head: 'bot/generate-docs-from-updated-schema',
                 base: 'main'
