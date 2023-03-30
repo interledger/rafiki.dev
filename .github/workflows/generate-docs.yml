@@ -15,6 +15,7 @@ jobs:
           commit_message: "[Bot] Generate docs from updated GraphQL schema"
           push_options: "--force"
           branch: bot/generate-docs-from-updated-schema
+          create_branch: true
 
       - name: Open PR with updated changes
         uses: actions/github-script@v5
