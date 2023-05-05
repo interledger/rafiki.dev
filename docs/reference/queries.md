@@ -78,6 +78,29 @@ last<br />
 </tbody>
 </table>
 
+## incomingPayment
+
+**Type:** [IncomingPayment](/docs/reference/objects#incomingpayment)
+
+Fetch an Open Payments incoming payment
+
+<p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
+
+<table>
+<thead><tr><th>Name</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td>
+id<br />
+<a href="/docs/reference/scalars#string"><code>String!</code></a>
+</td>
+<td>
+
+</td>
+</tr>
+</tbody>
+</table>
+
 ## outgoingPayment
 
 **Type:** [OutgoingPayment](/docs/reference/objects#outgoingpayment)
