@@ -317,8 +317,8 @@ Delete a peer
 <tbody>
 <tr>
 <td>
-id<br />
-<a href="/docs/reference/scalars#string"><code>String!</code></a>
+input<br />
+<a href="/docs/reference/inputObjects#deletepeerinput"><code>DeletePeerInput!</code></a>
 </td>
 <td>
 
@@ -340,8 +340,8 @@ Deposit webhook event liquidity
 <tbody>
 <tr>
 <td>
-eventId<br />
-<a href="/docs/reference/scalars#string"><code>String!</code></a>
+input<br />
+<a href="/docs/reference/inputObjects#depositeventliquidityinput"><code>DepositEventLiquidityInput!</code></a>
 </td>
 <td>
 
@@ -363,11 +363,11 @@ Post liquidity withdrawal. Withdrawals are two-phase commits and are committed v
 <tbody>
 <tr>
 <td>
-withdrawalId<br />
-<a href="/docs/reference/scalars#string"><code>String!</code></a>
+input<br />
+<a href="/docs/reference/inputObjects#postliquiditywithdrawalinput"><code>PostLiquidityWithdrawalInput!</code></a>
 </td>
 <td>
-<p>The id of the liquidity withdrawal to post.</p>
+
 </td>
 </tr>
 </tbody>
@@ -386,11 +386,11 @@ Revoke a public key associated with a payment pointer. Open Payment requests usi
 <tbody>
 <tr>
 <td>
-id<br />
-<a href="/docs/reference/scalars#string"><code>String!</code></a>
+input<br />
+<a href="/docs/reference/inputObjects#revokepaymentpointerkeyinput"><code>RevokePaymentPointerKeyInput!</code></a>
 </td>
 <td>
-<p>Internal id of key</p>
+
 </td>
 </tr>
 </tbody>
@@ -409,11 +409,11 @@ If automatic withdrawal of funds received via Web Monetization by the payment po
 <tbody>
 <tr>
 <td>
-limit<br />
-<a href="/docs/reference/scalars#int"><code>Int!</code></a>
+input<br />
+<a href="/docs/reference/inputObjects#triggerpaymentpointereventsinput"><code>TriggerPaymentPointerEventsInput!</code></a>
 </td>
 <td>
-<p>Maximum number of events being triggered (n).</p>
+
 </td>
 </tr>
 </tbody>
@@ -478,11 +478,11 @@ Void liquidity withdrawal. Withdrawals are two-phase commits and are rolled back
 <tbody>
 <tr>
 <td>
-withdrawalId<br />
-<a href="/docs/reference/scalars#string"><code>String!</code></a>
+input<br />
+<a href="/docs/reference/inputObjects#voidliquiditywithdrawalinput"><code>VoidLiquidityWithdrawalInput!</code></a>
 </td>
 <td>
-<p>The id of the liquidity withdrawal to void.</p>
+
 </td>
 </tr>
 </tbody>
@@ -501,8 +501,8 @@ Withdraw webhook event liquidity
 <tbody>
 <tr>
 <td>
-eventId<br />
-<a href="/docs/reference/scalars#string"><code>String!</code></a>
+input<br />
+<a href="/docs/reference/inputObjects#withdraweventliquidityinput"><code>WithdrawEventLiquidityInput!</code></a>
 </td>
 <td>
 
