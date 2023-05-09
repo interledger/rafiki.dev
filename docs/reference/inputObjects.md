@@ -41,6 +41,15 @@ id<br />
 <p>The id of the transfer.</p>
 </td>
 </tr>
+<tr>
+<td>
+idempotencyKey<br />
+<a href="/docs/reference/scalars#string"><code>String!</code></a>
+</td>
+<td>
+<p>Unique key to ensure duplicate or retried requests are processed only once. See <a href="https://en.wikipedia.org/wiki/Idempotence">idempotence</a></p>
+</td>
+</tr>
 </tbody>
 </table>
 
@@ -80,6 +89,15 @@ id<br />
 <p>The id of the transfer.</p>
 </td>
 </tr>
+<tr>
+<td>
+idempotencyKey<br />
+<a href="/docs/reference/scalars#string"><code>String!</code></a>
+</td>
+<td>
+<p>Unique key to ensure duplicate or retried requests are processed only once. See <a href="https://en.wikipedia.org/wiki/Idempotence">idempotence</a></p>
+</td>
+</tr>
 </tbody>
 </table>
 
@@ -113,36 +131,6 @@ assetCode<br />
 <tr>
 <td>
 assetScale<br />
-<a href="/docs/reference/scalars#uint8"><code>UInt8!</code></a>
-</td>
-<td>
-<p>Difference in orders of magnitude between the standard unit of an asset and a corresponding fractional unit</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-## AssetInput
-
-
-
-<p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
-
-<table>
-<thead><tr><th>Name</th><th>Description</th></tr></thead>
-<tbody>
-<tr>
-<td>
-code<br />
-<a href="/docs/reference/scalars#string"><code>String!</code></a>
-</td>
-<td>
-<p><a href="https://en.wikipedia.org/wiki/ISO_4217">ISO 4217 currency code</a>, e.g. <code>USD</code></p>
-</td>
-</tr>
-<tr>
-<td>
-scale<br />
 <a href="/docs/reference/scalars#uint8"><code>UInt8!</code></a>
 </td>
 <td>
@@ -188,6 +176,15 @@ withdrawalThreshold<br />
 <p>Minimum amount of liquidity that can be withdrawn from the asset</p>
 </td>
 </tr>
+<tr>
+<td>
+idempotencyKey<br />
+<a href="/docs/reference/scalars#string"><code>String</code></a>
+</td>
+<td>
+<p>Unique key to ensure duplicate or retried requests are processed only once. See <a href="https://en.wikipedia.org/wiki/Idempotence">idempotence</a></p>
+</td>
+</tr>
 </tbody>
 </table>
 
@@ -225,6 +222,15 @@ id<br />
 </td>
 <td>
 <p>The id of the withdrawal.</p>
+</td>
+</tr>
+<tr>
+<td>
+idempotencyKey<br />
+<a href="/docs/reference/scalars#string"><code>String!</code></a>
+</td>
+<td>
+<p>Unique key to ensure duplicate or retried requests are processed only once. See <a href="https://en.wikipedia.org/wiki/Idempotence">idempotence</a></p>
 </td>
 </tr>
 </tbody>
@@ -284,6 +290,15 @@ externalRef<br />
 <p>A reference that can be used by external systems to reconcile this payment with their systems. E.g. an invoice number.</p>
 </td>
 </tr>
+<tr>
+<td>
+idempotencyKey<br />
+<a href="/docs/reference/scalars#string"><code>String</code></a>
+</td>
+<td>
+<p>Unique key to ensure duplicate or retried requests are processed only once. See <a href="https://en.wikipedia.org/wiki/Idempotence">idempotence</a></p>
+</td>
+</tr>
 </tbody>
 </table>
 
@@ -332,6 +347,15 @@ externalRef<br />
 <p>A reference that can be used by external systems to reconcile this payment with their systems. E.g. an invoice number.</p>
 </td>
 </tr>
+<tr>
+<td>
+idempotencyKey<br />
+<a href="/docs/reference/scalars#string"><code>String</code></a>
+</td>
+<td>
+<p>Unique key to ensure duplicate or retried requests are processed only once. See <a href="https://en.wikipedia.org/wiki/Idempotence">idempotence</a></p>
+</td>
+</tr>
 </tbody>
 </table>
 
@@ -371,6 +395,15 @@ publicName<br />
 <p>Public name associated with the payment pointer</p>
 </td>
 </tr>
+<tr>
+<td>
+idempotencyKey<br />
+<a href="/docs/reference/scalars#string"><code>String</code></a>
+</td>
+<td>
+<p>Unique key to ensure duplicate or retried requests are processed only once. See <a href="https://en.wikipedia.org/wiki/Idempotence">idempotence</a></p>
+</td>
+</tr>
 </tbody>
 </table>
 
@@ -401,6 +434,15 @@ jwk<br />
 <p>Public key</p>
 </td>
 </tr>
+<tr>
+<td>
+idempotencyKey<br />
+<a href="/docs/reference/scalars#string"><code>String</code></a>
+</td>
+<td>
+<p>Unique key to ensure duplicate or retried requests are processed only once. See <a href="https://en.wikipedia.org/wiki/Idempotence">idempotence</a></p>
+</td>
+</tr>
 </tbody>
 </table>
 
@@ -429,6 +471,15 @@ id<br />
 </td>
 <td>
 <p>The id of the withdrawal.</p>
+</td>
+</tr>
+<tr>
+<td>
+idempotencyKey<br />
+<a href="/docs/reference/scalars#string"><code>String!</code></a>
+</td>
+<td>
+<p>Unique key to ensure duplicate or retried requests are processed only once. See <a href="https://en.wikipedia.org/wiki/Idempotence">idempotence</a></p>
 </td>
 </tr>
 </tbody>
@@ -488,6 +539,15 @@ name<br />
 <p>Peer&#39;s internal name</p>
 </td>
 </tr>
+<tr>
+<td>
+idempotencyKey<br />
+<a href="/docs/reference/scalars#string"><code>String</code></a>
+</td>
+<td>
+<p>Unique key to ensure duplicate or retried requests are processed only once. See <a href="https://en.wikipedia.org/wiki/Idempotence">idempotence</a></p>
+</td>
+</tr>
 </tbody>
 </table>
 
@@ -525,6 +585,15 @@ id<br />
 </td>
 <td>
 <p>The id of the withdrawal.</p>
+</td>
+</tr>
+<tr>
+<td>
+idempotencyKey<br />
+<a href="/docs/reference/scalars#string"><code>String!</code></a>
+</td>
+<td>
+<p>Unique key to ensure duplicate or retried requests are processed only once. See <a href="https://en.wikipedia.org/wiki/Idempotence">idempotence</a></p>
 </td>
 </tr>
 </tbody>
@@ -573,6 +642,15 @@ receiver<br />
 </td>
 <td>
 <p>Payment pointer URL of the receiver</p>
+</td>
+</tr>
+<tr>
+<td>
+idempotencyKey<br />
+<a href="/docs/reference/scalars#string"><code>String</code></a>
+</td>
+<td>
+<p>Unique key to ensure duplicate or retried requests are processed only once. See <a href="https://en.wikipedia.org/wiki/Idempotence">idempotence</a></p>
 </td>
 </tr>
 </tbody>
@@ -630,6 +708,75 @@ externalRef<br />
 </td>
 <td>
 <p>A reference that can be used by external systems to reconcile this payment with their systems. E.g. an invoice number.</p>
+</td>
+</tr>
+<tr>
+<td>
+idempotencyKey<br />
+<a href="/docs/reference/scalars#string"><code>String</code></a>
+</td>
+<td>
+<p>Unique key to ensure duplicate or retried requests are processed only once. See <a href="https://en.wikipedia.org/wiki/Idempotence">idempotence</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+## DeletePeerInput
+
+
+
+<p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
+
+<table>
+<thead><tr><th>Name</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td>
+id<br />
+<a href="/docs/reference/scalars#id"><code>ID!</code></a>
+</td>
+<td>
+
+</td>
+</tr>
+<tr>
+<td>
+idempotencyKey<br />
+<a href="/docs/reference/scalars#string"><code>String</code></a>
+</td>
+<td>
+<p>Unique key to ensure duplicate or retried requests are processed only once. See <a href="https://en.wikipedia.org/wiki/Idempotence">idempotence</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+## DepositEventLiquidityInput
+
+
+
+<p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
+
+<table>
+<thead><tr><th>Name</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td>
+eventId<br />
+<a href="/docs/reference/scalars#string"><code>String!</code></a>
+</td>
+<td>
+<p>The id of the event to deposit into.</p>
+</td>
+</tr>
+<tr>
+<td>
+idempotencyKey<br />
+<a href="/docs/reference/scalars#string"><code>String!</code></a>
+</td>
+<td>
+<p>Unique key to ensure duplicate or retried requests are processed only once. See <a href="https://en.wikipedia.org/wiki/Idempotence">idempotence</a></p>
 </td>
 </tr>
 </tbody>
@@ -773,6 +920,96 @@ crv<br />
 </tbody>
 </table>
 
+## PostLiquidityWithdrawalInput
+
+
+
+<p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
+
+<table>
+<thead><tr><th>Name</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td>
+withdrawalId<br />
+<a href="/docs/reference/scalars#string"><code>String!</code></a>
+</td>
+<td>
+<p>The id of the liquidity withdrawal to post.</p>
+</td>
+</tr>
+<tr>
+<td>
+idempotencyKey<br />
+<a href="/docs/reference/scalars#string"><code>String!</code></a>
+</td>
+<td>
+<p>Unique key to ensure duplicate or retried requests are processed only once. See <a href="https://en.wikipedia.org/wiki/Idempotence">idempotence</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+## RevokePaymentPointerKeyInput
+
+
+
+<p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
+
+<table>
+<thead><tr><th>Name</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td>
+id<br />
+<a href="/docs/reference/scalars#string"><code>String!</code></a>
+</td>
+<td>
+<p>Internal id of key</p>
+</td>
+</tr>
+<tr>
+<td>
+idempotencyKey<br />
+<a href="/docs/reference/scalars#string"><code>String</code></a>
+</td>
+<td>
+<p>Unique key to ensure duplicate or retried requests are processed only once. See <a href="https://en.wikipedia.org/wiki/Idempotence">idempotence</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+## TriggerPaymentPointerEventsInput
+
+
+
+<p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
+
+<table>
+<thead><tr><th>Name</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td>
+limit<br />
+<a href="/docs/reference/scalars#int"><code>Int!</code></a>
+</td>
+<td>
+<p>Maximum number of events being triggered (n).</p>
+</td>
+</tr>
+<tr>
+<td>
+idempotencyKey<br />
+<a href="/docs/reference/scalars#string"><code>String</code></a>
+</td>
+<td>
+<p>Unique key to ensure duplicate or retried requests are processed only once. See <a href="https://en.wikipedia.org/wiki/Idempotence">idempotence</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+
 ## UpdateAssetInput
 
 
@@ -798,6 +1035,15 @@ withdrawalThreshold<br />
 </td>
 <td>
 <p>New minimum amount of liquidity that can be withdrawn from the asset</p>
+</td>
+</tr>
+<tr>
+<td>
+idempotencyKey<br />
+<a href="/docs/reference/scalars#string"><code>String</code></a>
+</td>
+<td>
+<p>Unique key to ensure duplicate or retried requests are processed only once. See <a href="https://en.wikipedia.org/wiki/Idempotence">idempotence</a></p>
 </td>
 </tr>
 </tbody>
@@ -855,6 +1101,75 @@ name<br />
 </td>
 <td>
 <p>Peer&#39;s new public name</p>
+</td>
+</tr>
+<tr>
+<td>
+idempotencyKey<br />
+<a href="/docs/reference/scalars#string"><code>String</code></a>
+</td>
+<td>
+<p>Unique key to ensure duplicate or retried requests are processed only once. See <a href="https://en.wikipedia.org/wiki/Idempotence">idempotence</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+## VoidLiquidityWithdrawalInput
+
+
+
+<p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
+
+<table>
+<thead><tr><th>Name</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td>
+withdrawalId<br />
+<a href="/docs/reference/scalars#string"><code>String!</code></a>
+</td>
+<td>
+<p>The id of the liquidity withdrawal to void.</p>
+</td>
+</tr>
+<tr>
+<td>
+idempotencyKey<br />
+<a href="/docs/reference/scalars#string"><code>String!</code></a>
+</td>
+<td>
+<p>Unique key to ensure duplicate or retried requests are processed only once. See <a href="https://en.wikipedia.org/wiki/Idempotence">idempotence</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+## WithdrawEventLiquidityInput
+
+
+
+<p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
+
+<table>
+<thead><tr><th>Name</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td>
+eventId<br />
+<a href="/docs/reference/scalars#string"><code>String!</code></a>
+</td>
+<td>
+<p>The id of the event to withdraw from.</p>
+</td>
+</tr>
+<tr>
+<td>
+idempotencyKey<br />
+<a href="/docs/reference/scalars#string"><code>String!</code></a>
+</td>
+<td>
+<p>Unique key to ensure duplicate or retried requests are processed only once. See <a href="https://en.wikipedia.org/wiki/Idempotence">idempotence</a></p>
 </td>
 </tr>
 </tbody>
