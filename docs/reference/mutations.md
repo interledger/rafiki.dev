@@ -442,6 +442,29 @@ input<br />
 </tbody>
 </table>
 
+## updatePaymentPointer
+
+**Type:** [UpdatePaymentPointerMutationResponse!](/docs/reference/objects#updatepaymentpointermutationresponse)
+
+Update a payment pointer
+
+<p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
+
+<table>
+<thead><tr><th>Name</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td>
+input<br />
+<a href="/docs/reference/inputObjects#updatepaymentpointerinput"><code>UpdatePaymentPointerInput!</code></a>
+</td>
+<td>
+
+</td>
+</tr>
+</tbody>
+</table>
+
 ## updatePeer
 
 **Type:** [UpdatePeerMutationResponse!](/docs/reference/objects#updatepeermutationresponse)

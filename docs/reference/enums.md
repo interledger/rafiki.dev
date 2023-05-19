@@ -215,3 +215,27 @@ sidebar_position: 6
 </tbody>
 </table>
 
+## PaymentPointerStatus
+
+
+
+<p style={{ marginBottom: "0.4em" }}><strong>Values</strong></p>
+
+<table>
+<thead><tr><th>Value</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td>INACTIVE</td>
+<td>
+<p>Status after deactivating</p>
+</td>
+</tr>
+<tr>
+<td>ACTIVE</td>
+<td>
+<p>Default status</p>
+</td>
+</tr>
+</tbody>
+</table>
+
