@@ -1049,6 +1049,54 @@ idempotencyKey<br />
 </tbody>
 </table>
 
+## UpdatePaymentPointerInput
+
+
+
+<p style={{ marginBottom: "0.4em" }}><strong>Arguments</strong></p>
+
+<table>
+<thead><tr><th>Name</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td>
+id<br />
+<a href="/docs/reference/scalars#id"><code>ID!</code></a>
+</td>
+<td>
+<p>ID of payment pointer to update</p>
+</td>
+</tr>
+<tr>
+<td>
+publicName<br />
+<a href="/docs/reference/scalars#string"><code>String</code></a>
+</td>
+<td>
+<p>New public name for payment pointer</p>
+</td>
+</tr>
+<tr>
+<td>
+status<br />
+<a href="/docs/reference/enums#paymentpointerstatus"><code>PaymentPointerStatus</code></a>
+</td>
+<td>
+<p>New status to set the payment pointer to</p>
+</td>
+</tr>
+<tr>
+<td>
+idempotencyKey<br />
+<a href="/docs/reference/scalars#string"><code>String</code></a>
+</td>
+<td>
+<p>Unique key to ensure duplicate or retried requests are processed only once. See <a href="https://en.wikipedia.org/wiki/Idempotence">idempotence</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+
 ## UpdatePeerInput
 
 

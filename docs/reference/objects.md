@@ -1338,6 +1338,15 @@ createdAt<br />
 <p>Date-time of creation</p>
 </td>
 </tr>
+<tr>
+<td>
+status<br />
+<a href="/docs/reference/enums#paymentpointerstatus"><code>PaymentPointerStatus</code></a>
+</td>
+<td>
+<p>Status of the payment pointer</p>
+</td>
+</tr>
 </tbody>
 </table>
 
@@ -2104,6 +2113,58 @@ count<br />
 </td>
 <td>
 <p>Number of events triggered</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+## UpdatePaymentPointerMutationResponse
+
+
+
+<p style={{ marginBottom: "0.4em" }}><strong>Implements</strong></p>
+
+- [MutationResponse](/docs/reference/interfaces#mutationresponse)
+
+<p style={{ marginBottom: "0.4em" }}><strong>Fields</strong></p>
+
+<table>
+<thead><tr><th>Name</th><th>Description</th></tr></thead>
+<tbody>
+<tr>
+<td>
+code<br />
+<a href="/docs/reference/scalars#string"><code>String!</code></a>
+</td>
+<td>
+
+</td>
+</tr>
+<tr>
+<td>
+success<br />
+<a href="/docs/reference/scalars#boolean"><code>Boolean!</code></a>
+</td>
+<td>
+
+</td>
+</tr>
+<tr>
+<td>
+message<br />
+<a href="/docs/reference/scalars#string"><code>String!</code></a>
+</td>
+<td>
+
+</td>
+</tr>
+<tr>
+<td>
+paymentPointer<br />
+<a href="/docs/reference/objects#paymentpointer"><code>PaymentPointer</code></a>
+</td>
+<td>
+
 </td>
 </tr>
 </tbody>
