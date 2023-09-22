@@ -1,3 +1,5 @@
+New location for documentation source sode is: https://github.com/interledger/rafiki/tree/main/packages/documentation
+
 # rafiki.dev
 Documentation Platform for Rafiki
 
